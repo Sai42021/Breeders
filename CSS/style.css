@@ -35,6 +35,14 @@ body {
   background-position: center;
 }
 
+#home-carousel-item {
+  background-image: url(../images/plantation.jpg)
+}
+
+#breeders-carousel-item {
+  background-image: url(../images/cattle.png)
+}
+
 /* Height for devices larger than 576px */
 @media (min-width: 920px) {
   #introCarousel,
