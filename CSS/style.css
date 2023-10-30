@@ -11,8 +11,20 @@ body {
 }
 
 .nav-link {
-    font-weight: 400;
+    font-weight: 600;
 }
+
+.navbar {    
+    .navbar-nav li a {
+      &:hover, &:focus, &:active {
+        color: #800000;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
 /*Nav-bar END*/
 
 /*Intro section BEGIN*/
@@ -141,7 +153,3 @@ body {
     }
   }
   /* contact form END */
-
-  /*Footer BEGIN*/
-
-  /*Footer END*/
