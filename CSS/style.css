@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    padding-top: 80px; 
 }
 
 /*Nav-bar BEGIN*/
@@ -17,7 +18,7 @@ body {
 .navbar {    
     .navbar-nav li a {
       &:hover, &:focus, &:active {
-        color: #800000;
+        color: #008000;
         background-color: transparent;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -95,7 +96,7 @@ body {
   }
   
   .feature h2 {
-    color: #800000;
+    color: #008000;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
