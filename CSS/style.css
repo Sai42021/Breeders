@@ -15,7 +15,11 @@ body {
     font-weight: 600;
 }
 
-.navbar {    
+.active-nav-link {
+  color: #008000;
+}
+
+/* .navbar {    
     .navbar-nav li a {
       &:hover, &:focus, &:active {
         color: #008000;
@@ -25,7 +29,7 @@ body {
         box-shadow: none;
       }
     }
-  }
+  } */
 /*Nav-bar END*/
 
 /*Intro section BEGIN*/
