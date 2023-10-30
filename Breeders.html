@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap -->
     <link
@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>Breeders | Home</title>
+    <title>Breeders | Breeders</title>
   </head>
   <body>
     <!--Nav-bar BEGIN-->
@@ -66,27 +66,19 @@
           <!-- Single item -->
           <div
             class="carousel-item active"
-            style="background-image: url(../images/plantation.jpg)"
+            style="background-image: url(../images/cattle.png)"
           >
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="container">
                 <div class="text-white text-center">
-                  <h1>Learn About Breeders</h1>
-                  <h4>
-                    Join the mailing list to get notified about new breeders.
-                  </h4>
+                  <h1>Specific Breeders</h1>
+                  <h4>Have a question? Leave us a message.</h4>
                   <a
                     class="btn btn-outline-light btn-lg m-2"
                     href="#"
                     role="button"
                     rel="nofollow"
-                    >About</a
-                  >
-                  <a
-                    class="btn btn-outline-light btn-lg m-2"
-                    href="#"
-                    role="button"
-                    >Sign Up</a
+                    >Contact</a
                   >
                 </div>
               </div>
@@ -97,103 +89,220 @@
     </section>
     <!-- Intro section END-->
 
-    <!-- Features section Begin -->
-    <section class="features p-3">
+    <!-- Breeders section BEGIN -->
+    <section class="breeders">
       <div class="container">
-        <div class="row feature">
-          <div class="col-md">
-            <div class="card">
-              <img
-                class="card-img-top img-fluid"
-                src="images/farm-employee.jpg"
-                alt="image of a feature"
-              />
+        <div class="row">
+          <h2>Explore a Wide Variety of Breeders</h2>
+          <p>
+            With varying skill sets, our breeders have diverse and unique
+            skills.
+          </p>
+        </div>
+
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Ross.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Ross Smith<br /><span>Sheep Breeder</span></h3>
             </div>
           </div>
-
-          <div class="col-md">
-            <h2>Agriculture & Stuff</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores cupiditate velit similique esse. Adipisci inventore
-              quod ducimus suscipit facere esse!
-            </p>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Rachel.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Rachel Smith<br /><span>Diamond Breeder</span></h3>
+            </div>
           </div>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Monica.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Monica Smith<br /><span>Cattle Breeder</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
         </div>
 
         <hr class="m-0" />
 
-        <div class="row feature">
-          <div class="col-md">
-            <h2>More Agriculture</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores cupiditate velit similique esse. Adipisci inventore
-              quod ducimus suscipit facere esse!
-            </p>
-          </div>
-
-          <div class="col-md">
-            <div class="card">
-              <img
-                class="card-img-top img-fluid"
-                src="images/irrigation.jpg"
-                alt="image of a feature"
-              />
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Monica.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Monica Smith<br /><span>Cattle Breeder</span></h3>
             </div>
           </div>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Ross.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Ross Smith<br /><span>Sheep Breeder</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="card col-md-4">
+          <div class="content">
+            <div class="imgBx">
+              <img src="images/Rachel.jpg" />
+            </div>
+            <div class="contentBx">
+              <h3>Rachel Smith<br /><span>Diamond Breeder</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#RossModal"
+              >
+                Learn More
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <!-- Features section END -->
+    <!-- Breeders section END -->
 
-    <!-- <hr class="my-5" /> -->
-    <!-- <hr class="m-0" /> -->
-
-    <hr class="m-0" />
-    <!-- contact form section -->
-    <section class="contact-form">
-      <div class="container text-left">
-        <div class="row">
-          <h2>Contact Us</h2>
-        </div>
-        <div class="container text-left col-md-6">
-          <form
-            action="https://formsubmit.co/abisaisem@gmail.com"
-            method="POST"
-          >
-            <label for="fname">Full Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="fullname"
-              placeholder="e.g Dave Lamb"
-              required
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="e.g someone@example.com"
-              required
-            />
-
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 100px"
-            ></textarea>
-
-            <input type="submit" value="Send" />
-          </form>
+    <!-- Ross Modal BEGIN-->
+    <div
+      class="modal fade"
+      id="RossModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="RossModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="RossModalLabel" style="color: #008000">
+              Breeder Details
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul style="list-style: none; text-decoration: none">
+              <li><b>Breeder's Name: </b>Ross Smith</li>
+              <li><b>Location: </b>Outapi, NA</li>
+              <li><b>Email: </b>MedsEmail@example.com</li>
+              <li>
+                <b>LinkedIn: </b
+                ><a href="#" target="_blank" class="text-black">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+            <br />
+            <h5>Breeding Program Details</h5>
+            <ul style="list-style: none; text-decoration: none">
+              <li>
+                <b>Breeds Specialized In: </b>Brahman, Plymouth Rock,
+                White-Castle
+              </li>
+              <li><b>Breeding Goals and Objectives: </b>Optimal Efficiency</li>
+              <li><b>Available Litters: </b>All of the mentioned</li>
+              <li><b>Upcoming Litters: </b>White-Leghorn</li>
+              <li><b>Past Litters: </b>Bulls</li>
+              <li><b>Sires and Dams: </b>N/A</li>
+              <li><b>Health Testing and Certifications: </b>N/A</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- contact form section -->
+    </div>
+    <!-- Ross Modal END -->
 
     <hr class="my-5" />
     <!-- Footer -->
