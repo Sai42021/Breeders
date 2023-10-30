@@ -27,7 +27,7 @@
     <!--Nav-bar BEGIN-->
     <nav class="navbar fixed-top nav-expand-lg bg-light navbar-light">
       <div class="container">
-        <a href="#" class="navbar-brand"
+        <a href="Home.html" class="navbar-brand"
           ><img src="images/EFSlogo.png" alt="Breeders logo"
         /></a>
 
@@ -67,7 +67,7 @@
           <div class="carousel-item active" id="home-carousel-item">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="container">
-                <div class="text-white text-center">
+                <div class="text-white text-center fade-in-up">
                   <h1>Learn About Breeders</h1>
                   <h4>
                     Join the mailing list to get notified about new breeders.
@@ -108,7 +108,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-md fade-in-up">
             <h2>Agriculture & Stuff</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -121,7 +121,7 @@
         <hr class="m-0" />
 
         <div class="row feature">
-          <div class="col-md">
+          <div class="col-md fade-in-up">
             <h2>More Agriculture</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -315,7 +315,36 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
 
+      // Function to handle the scroll event and trigger animations
+      function handleScroll() {
+        const divs = document.querySelectorAll(".fade-in-up");
+        divs.forEach((div) => {
+          if (isElementInViewport(div) && !div.classList.contains("animate")) {
+            div.classList.add("animate");
+          }
+        });
+      }
+
+      // Add scroll event listener to trigger animations
+      document.addEventListener("DOMContentLoaded", function () {
+        handleScroll(); // Check on initial load
+        window.addEventListener("scroll", handleScroll);
+      });
+    </script>
     <!-- Scripts -->
     <script src="JS/script.js"></script>
   </body>

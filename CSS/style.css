@@ -295,3 +295,18 @@ body {
     color: #008000;
 }
   /* Breeders section END*/
+
+/* Div effects BEGIN*/
+/* Define the initial styles for your div */
+.fade-in-up {
+  opacity: 0; /* Start with transparency */
+  transform: translateY(20px); /* Move down 20px */
+  transition: opacity 1s, transform 1s;
+}
+
+/* Define the animation effect */
+.fade-in-up.animate {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Return to original position */
+}
+/* Div effects END*/

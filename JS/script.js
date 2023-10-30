@@ -7,7 +7,4 @@ navLinkEls.forEach(navLinkEl => {
         navLinkEl.classList.add('active-nav-link');
     }
 });
-
-
-
 // Nav link active END

@@ -27,7 +27,7 @@
     <!--Nav-bar BEGIN-->
     <nav class="navbar fixed-top nav-expand-lg bg-light navbar-light">
       <div class="container">
-        <a href="#" class="navbar-brand"
+        <a href="Home.html" class="navbar-brand"
           ><img src="images/EFSlogo.png" alt="Breeders logo"
         /></a>
 
@@ -69,7 +69,7 @@
           <div class="carousel-item active" id="breeders-carousel-item">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
               <div class="container">
-                <div class="text-white text-center">
+                <div class="text-white text-center fade-in-up">
                   <h1>Specific Breeders</h1>
                   <h4>Have a question? Leave us a message.</h4>
                   <a
@@ -91,7 +91,7 @@
     <!-- Breeders section BEGIN -->
     <section class="breeders" id="about">
       <div class="container">
-        <div class="row">
+        <div class="row fade-in-up">
           <h2>Explore a Wide Variety of Breeders</h2>
           <p>
             With varying skill sets, our breeders have diverse and unique
@@ -99,7 +99,7 @@
           </p>
         </div>
 
-        <div class="card col-md-4">
+        <div class="card col-md-4 fade-in-up">
           <div class="content">
             <div class="imgBx">
               <img src="images/Ross.jpg" />
@@ -121,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <div class="card col-md-4">
+        <div class="card col-md-4 fade-in-up">
           <div class="content">
             <div class="imgBx">
               <img src="images/Rachel.jpg" />
@@ -143,7 +143,7 @@
             </li>
           </ul>
         </div>
-        <div class="card col-md-4">
+        <div class="card col-md-4 fade-in-up">
           <div class="content">
             <div class="imgBx">
               <img src="images/Monica.jpg" />
@@ -471,7 +471,36 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
 
+      // Function to handle the scroll event and trigger animations
+      function handleScroll() {
+        const divs = document.querySelectorAll(".fade-in-up");
+        divs.forEach((div) => {
+          if (isElementInViewport(div) && !div.classList.contains("animate")) {
+            div.classList.add("animate");
+          }
+        });
+      }
+
+      // Add scroll event listener to trigger animations
+      document.addEventListener("DOMContentLoaded", function () {
+        handleScroll(); // Check on initial load
+        window.addEventListener("scroll", handleScroll);
+      });
+    </script>
     <!-- Scripts -->
     <script src="JS/script.js"></script>
   </body>
