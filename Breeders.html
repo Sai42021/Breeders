@@ -51,7 +51,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+                <a href="#about" class="nav-link">About</a>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@
                   <h4>Have a question? Leave us a message.</h4>
                   <a
                     class="btn btn-outline-light btn-lg m-2"
-                    href="#"
+                    href="#contact"
                     role="button"
                     rel="nofollow"
                     >Contact</a
@@ -89,7 +89,7 @@
     <!-- Intro section END-->
 
     <!-- Breeders section BEGIN -->
-    <section class="breeders">
+    <section class="breeders" id="about">
       <div class="container">
         <div class="row">
           <h2>Explore a Wide Variety of Breeders</h2>
@@ -237,6 +237,51 @@
       </div>
     </section>
     <!-- Breeders section END -->
+
+    <hr class="m-0" />
+    <!-- contact form section -->
+    <section class="contact-form" id="contact">
+      <div class="container text-left">
+        <div class="row">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="container text-left col-md-6">
+          <form
+            action="https://formsubmit.co/abisaisem@gmail.com"
+            method="POST"
+          >
+            <label for="fname">Full Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fullname"
+              placeholder="e.g Dave Lamb"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="e.g someone@example.com"
+              required
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 100px"
+            ></textarea>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact form section -->
 
     <!-- Ross Modal BEGIN-->
     <div
